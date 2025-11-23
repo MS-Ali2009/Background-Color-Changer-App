@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color Changer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100 transition-colors duration-500">
+  
+  <div class="bg-white p-10 rounded-2xl shadow-xl w-full max-w-md text-center">
+    <h1 class="text-2xl font-bold mb-8 text-gray-800">Background Color Changer App</h1>
+
+    <div class="flex flex-wrap justify-center gap-4 mb-6">
+      <button onclick="changecolor('red')" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-lg shadow-md transition transform hover:scale-105">Red</button>
+      <button onclick="changecolor('blue')" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg shadow-md transition transform hover:scale-105">Blue</button>
+      <button onclick="changecolor('green')" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-lg shadow-md transition transform hover:scale-105">Green</button>
+      <button onclick="randomcolor()" class="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-lg shadow-md transition transform hover:scale-105">Random</button>
+    </div>
+
+    <div id="Colorcode" class="text-gray-700 font-bold mb-6 text-lg">none</div>
+
+    <div id="history" class="flex flex-wrap justify-center gap-2 max-h-36 overflow-y-auto p-2 border-t border-gray-200"></div>
+  </div>
+
+  <script src="../Projects/Project_02.js"></script>
+</body>
+</html>
